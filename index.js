@@ -5,7 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const { DocumentDocs } = require('./src/Invoice');
 const app = express();
-const PORT = process.env.PORT || 2000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());;
 app.use(express.json());
