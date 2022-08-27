@@ -85,6 +85,10 @@ app.post('/copy/sheet', async(req, res)=>{
     res.send('Sheet copied.');
 });
 
+app.post('/test', (req, res)=>{
+    res.send('This is a test that sheet received.');
+});
+
 app.listen(2000, ()=>{
     console.log('listing on port 2000');
 });
