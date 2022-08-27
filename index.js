@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const { DocumentDocs } = require('./src/Invoice');
 const app = express();
+const PORT = process.env.PORT || 2000;
 
 app.use(cors());;
 app.use(express.json());
@@ -89,6 +90,6 @@ app.post('/test', (req, res)=>{
     res.send('This is a test that sheet received.');
 });
 
-app.listen(2000, ()=>{
+app.listen(PORT, ()=>{
     console.log('listing on port 2000');
 });
