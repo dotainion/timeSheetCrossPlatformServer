@@ -86,7 +86,7 @@ app.post('/copy/sheet', async(req, res)=>{
     res.send('Sheet copied.');
 });
 
-app.post('/test', (req, res)=>{
+app.get('/test', (req, res)=>{
     res.send('This is a test that sheet received.');
 });
 
